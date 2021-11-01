@@ -75,7 +75,7 @@ legend {
 	margin: 0;
 	box-sizing: border-box;
 	max-width: 100%;
-	/* border: 0.5px solid rgba(255, 255, 255, 0.1); */
+	border: 0.5px solid rgba(255, 255, 255, 0.1);
 }
 
 /*General Styles*/
@@ -110,29 +110,23 @@ a:hover {
 h1 {
 	font-size: 5rem;
   line-height: 1.2;
-	margin-bottom: 4%;
+	margin-bottom: 2%;
 	color: white;
 }
 h2 {
 	font-size: 4rem;
   line-height: 1.2;
-	margin-bottom: 4%;
+	margin-bottom: 2%;
 	color: white;
 }
 h3 {
 	font-size: 2.5rem;
   line-height: 1.2;
-	margin-bottom: 4%;
+	margin-bottom: 2%;
 	color: white;
 }
 p {
 	margin-bottom: 2%;
-}
-.meta {
-	font-size: 1rem;
-	color: rgba(255, 255, 255, 0.2);
-	text-align: center;
-  padding-top: 24px;
 }
 
 /*Button Styles*/
@@ -228,13 +222,32 @@ footer {
 	text-align: center;
 	padding: 2%;
 }
-footer img:hover {
-  opacity: 48%;
+footer a {
+  display: block;
+}
+.copyright {
+	font-size: 1rem;
+	color: rgba(255, 255, 255, 0.2);
+	text-align: center;
+}
+.twitter {
+  margin-top: 24px;
+}
+.twitter:hover {
+  opacity: 50%
 }
 
 /*———RESPONSIVE STYLES———*/
 
-/*Responsive Styles: Tablet*/
+/*Ultra-wide Styles*/
+@media (min-width: 1920px) {
+  /*Hero Section*/
+  header {
+    text-align: center;
+  }
+}
+
+/*Tablet Styles*/
 @media (max-width: 800px) {
   /*Projects Section*/
   #projects div {
@@ -242,7 +255,7 @@ footer img:hover {
   }
 }
 
-/*Responsive Styles: Mobile*/
+/*Mobile Styles*/
 @media (max-width: 500px) {
   /*Hero Section*/
   header {
@@ -266,5 +279,13 @@ footer img:hover {
   .bio {
     align-items: center;
     text-align: center;
+  }
+}
+
+/*iPhone Styles*/
+@media (max-width: 360px) {
+  /*Projects Section*/
+  #projects div {
+    width: 100%;
   }
 }
